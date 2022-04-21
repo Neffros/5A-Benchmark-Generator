@@ -1,33 +1,11 @@
 import plotly.graph_objects as go
-from dash import Dash, dcc, html
 import pandas as pd
 import json
 
-from Card import Card
-from Solution import Solution
-
-cardType = {
-    0: "clubs",
-    1: "spades",
-    2: "diamonds",
-    3: "hearts"
-}
-
-cardValue = {
-    2: "two",
-    3: "three",
-    4: "four",
-    5: "five",
-    6: "six",
-    7: "seven",
-    8: "eight",
-    9: "nine",
-    10: "ten",
-    11: "jack",
-    12: "queen",
-    13: "king",
-    14: "ace"
-}
+from dash import Dash, dcc, html
+from card import Card
+from solution import Solution
+from constants import cardType, cardValue
 
 
 def parse_json_to_solutions(path):
@@ -49,8 +27,45 @@ def parse_json_to_solutions(path):
     return solutions
 
 
-solutions = parse_json_to_solutions("annotator.json")
+def generate_match_rate_histogram(solutions):
+    solution_names = []
+    card_names = []
+    solution_values = []
+    for solution in solutions:
+        solution_names.append(solution.name)
 
+    for card in solutions[0].cards:
+        card_names.append(card.value + " of " + card.card_type)
+
+    for index in range(len(card_names)):
+        values_of_card = []
+        for solution in solutions:
+            values_of_card.append(solution.cards[index].match_rate)
+        solution_values.append(values_of_card)
+
+    listofBars = []
+
+    for index in range(len(solutions)):
+        listofBars.append(go.Bar(name=solution_names[index], x=card_names, y=solution_values[index]))
+
+    histogram = go.Figure(data=listofBars)
+
+    histogram.update_layout(
+        title="Score matches",
+        xaxis_title="Cards To Find",
+        yaxis_title="Score",
+        legend_title="Solutions",
+        font=dict(
+            family="Courier New, monospace",
+            size=18,
+            color="RebeccaPurple"
+        )
+    )
+
+    return histogram
+
+
+solutions = parse_json_to_solutions("annotator.json")
 
 df = pd.DataFrame(dict(
     x=[1, 2, 3, 4, 5],
@@ -78,32 +93,8 @@ fig.update_layout(
     )
 )
 
-hist = go.Figure(
-    data=[go.Bar(y=[2, 1, 3])],
-    layout_title_text="A Figure Displayed with fig.show()"
-)
+histogram = generate_match_rate_histogram(solutions)
 
-listofBars = []
-solutionNames = ["solution1", "solution crazy", "another one"]
-cardNames = ["Seven of hearts", "Queen of hearts", "Ace of Spades"]
-tmpValues = [[4,5,6], [2,3,6], [1,0,9]]
-index=0
-for solutionName in solutionNames:
-    listofBars.append(go.Bar(name=solutionName, x=cardNames, y=tmpValues[index]))
-    index+=1
-histogram = go.Figure(data=listofBars)
-
-histogram.update_layout(
-    title="Score matches",
-    xaxis_title="cards",
-    yaxis_title="score",
-    legend_title="Legend Title",
-    font=dict(
-        family="Courier New, monospace",
-        size=18,
-        color="RebeccaPurple"
-    )
-)
 
 app = Dash(__name__)
 

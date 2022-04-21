@@ -57,12 +57,12 @@
           "comparison": {
             "existingCards": [
               {
-                "matchRate": 0,
+                "matchRate": 0.8,
                 "type": 1,
                 "value": 12
               },
               {
-                "matchRate": 0,
+                "matchRate": 0.5,
                 "type": 3,
                 "value": 7
               }
@@ -82,12 +82,12 @@
           "comparison": {
             "existingCards": [
               {
-                "matchRate": 0,
+                "matchRate": 1,
                 "type": 1,
                 "value": 12
               },
               {
-                "matchRate": 0,
+                "matchRate": 0.2,
                 "type": 3,
                 "value": 7
               }
