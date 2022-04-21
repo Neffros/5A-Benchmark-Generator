@@ -1,0 +1,105 @@
+{
+  "dataset": [
+    {
+      "cards": [
+        {
+          "points": [
+            [
+              1331.0,
+              332.0
+            ],
+            [
+              1588.0,
+              345.0
+            ],
+            [
+              1592.0,
+              704.0
+            ],
+            [
+              1320.0,
+              694.0
+            ]
+          ],
+          "type": 1,
+          "value": 12
+        },
+        {
+          "points": [
+            [
+              1614.0,
+              281.0
+            ],
+            [
+              1873.0,
+              290.0
+            ],
+            [
+              1874.0,
+              656.0
+            ],
+            [
+              1618.0,
+              648.0
+            ]
+          ],
+          "type": 3,
+          "value": 7
+        }
+      ],
+      "imagePath": "./resources/pokerTables/IMG_20211217_110549.jpg"
+    }
+  ],
+  "solutions": [
+    {
+      "benchmarks": [
+        {
+          "comparison": {
+            "existingCards": [
+              {
+                "matchRate": 0,
+                "type": 1,
+                "value": 12
+              },
+              {
+                "matchRate": 0,
+                "type": 3,
+                "value": 7
+              }
+            ],
+            "falsePositiveCards": []
+          },
+          "performance": {
+            "executionTime": 0.10000000149011612
+          }
+        }
+      ],
+      "name": "Base Lior Solution Strategy"
+    },
+    {
+      "benchmarks": [
+        {
+          "comparison": {
+            "existingCards": [
+              {
+                "matchRate": 0,
+                "type": 1,
+                "value": 12
+              },
+              {
+                "matchRate": 0,
+                "type": 3,
+                "value": 7
+              }
+            ],
+            "falsePositiveCards": []
+          },
+          "performance": {
+            "executionTime": 0.10000000149011612
+          }
+        }
+      ],
+      "name": "Base Quentin Solution Strategy"
+    }
+  ]
+}
