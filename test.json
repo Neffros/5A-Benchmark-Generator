@@ -65,28 +65,28 @@
           "comparison": {
             "existingCards": [
               {
+                "characteristics": [
+                  1,
+                  4
+                ],
                 "matchRate": 0.49336525797843933,
                 "type": 1,
-                "value": 12,
-                "characteristics": [
-                  3,
-                  2
-                ]
+                "value": 12
               },
               {
-                "matchRate": 0.0,
-                "type": 3,
-                "value": 7,
                 "characteristics": [
                   3,
                   2
-                ]
+                ],
+                "matchRate": 0.0,
+                "type": 3,
+                "value": 7
               }
             ],
             "falsePositiveCards": []
           },
           "performance": {
-            "executionTime": 0.10000000149011612
+            "executionTime": 37.54800033569336
           }
         }
       ],
@@ -96,30 +96,22 @@
       "benchmarks": [
         {
           "comparison": {
-            "existingCards": [
+            "existingCards": [],
+            "falsePositiveCards": [
               {
-                "matchRate": 0.0,
                 "type": 1,
                 "value": 12,
-                "characteristics": [
-                  3,
-                  4
-                ]
+                "imagePath": "E:/dev/5A-OpenCV-Benchmarks/Annotator/resources/pokerTables/IMG_20211217_110650.jpg"
               },
               {
-                "matchRate": 0.0,
                 "type": 3,
                 "value": 7,
-                "characteristics": [
-                  1,
-                  4
-                ]
+                "imagePath": "E:/dev/5A-OpenCV-Benchmarks/Annotator/resources/pokerTables/IMG_20211217_110650.jpg"
               }
-            ],
-            "falsePositiveCards": []
+            ]
           },
           "performance": {
-            "executionTime": 0.10000000149011612
+            "executionTime": 40.85900115966797
           }
         }
       ],

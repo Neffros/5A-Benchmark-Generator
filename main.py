@@ -1,9 +1,7 @@
-import pandas as pd
-
+import base64
 from dash import Dash, dcc, html
 from histogram_generator import generate_match_rate_histogram
 from json_parser import parse_json_to_solutions
-import plotly.graph_objects as go
 
 
 solutions = parse_json_to_solutions("easy.json")

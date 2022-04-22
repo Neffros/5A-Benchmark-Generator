@@ -1,5 +1,6 @@
 from dash import html, dcc
 import plotly.graph_objects as go
+import base64
 from constants import cardCharacteristics
 from helper import remove_key
 
@@ -15,6 +16,19 @@ class Solution:
 		self.execution_time = execution_time
 		self.cards = cards
 		self.false_positive_cards = false_positive_cards
+
+	def generate_false_positives_display(self):
+		divs = []
+		for card in self.false_positive_cards:
+			sentence = self.name + " detected the card \'" + card.value + " of " + card.card_type + "\' at this section of the image."
+			encoded_image = base64.b64encode(open(card.image_path, 'rb').read())
+			div = html.Div([
+				html.H3(sentence),
+				html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode())),
+			])
+			divs.append(div)
+
+		return divs
 
 	def generate_characteristic_match_rate_histogram(self):
 		characteristics = {}
@@ -59,10 +73,11 @@ class Solution:
 	def render(self):
 		return html.Div([
 			html.H1(self.name + ":", style={"font-weight": "bold"}),
-			html.H3(self.name + " detected " + str(len(self.false_positive_cards)) + " false positive cards."),
 			html.H3("it took " + str(self.execution_time) + " seconds to run"),
 			dcc.Graph(
 				id=self.name + " characteristics",
 				figure=self.generate_characteristic_match_rate_histogram()
-			)
+			),
+			html.H3(self.name + " detected " + str(len(self.false_positive_cards)) + " false positive cards."),
+			html.Div([div for div in self.generate_false_positives_display()])
 		])

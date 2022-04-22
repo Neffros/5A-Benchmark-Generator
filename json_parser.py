@@ -3,7 +3,7 @@ import json
 from card import Card
 from solution import Solution
 from constants import cardType, cardValue
-
+from falsepositivecard import FalsePositiveCard
 
 def parse_json_to_solutions(path):
     solutions = []
@@ -27,8 +27,8 @@ def parse_json_to_solutions(path):
                 for falsePositiveCards in benchmark["comparison"]["falsePositiveCards"]:
                     value = cardValue.get(falsePositiveCards["value"])
                     card_type = cardType.get(falsePositiveCards["type"])
-                    match_rate = falsePositiveCards["matchRate"]
-                    false_positive_cards.append(Card(value, card_type, match_rate))
+                    image_path = falsePositiveCards["imagePath"]
+                    false_positive_cards.append(FalsePositiveCard(value, card_type, image_path))
                 execution_time = benchmark["performance"]["executionTime"]
 
             solutions.append(Solution(solution_name, execution_time, cards, false_positive_cards))
