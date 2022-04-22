@@ -59,12 +59,20 @@
               {
                 "matchRate": 0.8,
                 "type": 1,
-                "value": 12
+                "value": 12,
+                "characteristics": [
+                  3,
+                  4
+                ]
               },
               {
                 "matchRate": 0.5,
                 "type": 3,
-                "value": 7
+                "value": 7,
+                "characteristics": [
+                  1,
+                  4
+                ]
               }
             ],
             "falsePositiveCards": []
@@ -84,12 +92,20 @@
               {
                 "matchRate": 1,
                 "type": 1,
-                "value": 12
+                "value": 12,
+                "characteristics": [
+                  3,
+                  4
+                ]
               },
               {
-                "matchRate": 0.2,
+                "matchRate": 0.7,
                 "type": 3,
-                "value": 7
+                "value": 7,
+                "characteristics": [
+                  1,
+                  4
+                ]
               }
             ],
             "falsePositiveCards": []

@@ -20,3 +20,11 @@ cardValue = {
     13: "king",
     14: "ace"
 }
+
+cardCharacteristics = {
+    0: "clear",
+    1: "angled",
+    2: "bright",
+    3: "hidden",
+    4: "dark"
+}
