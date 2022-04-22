@@ -15,6 +15,10 @@ app = Dash(__name__)
 
 app.layout = html.Div([
     html.H1("Benchmark between solutions:", style={"font-weight": "bold"}),
+    html.H3("If the match rate is 0, the card was not detected at all by the solution.\n"
+            "If the match rate is beetween 0 and 1, a card was detected but it wasn't the correct one. the score will "
+            "be closer to 1 the more similar that card is to the expected one\n "
+            "If the match rate is 1, the card was correctly detected."),
     dcc.Graph(
         id="histogram",
         figure=histogram
