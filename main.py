@@ -6,7 +6,7 @@ from json_parser import parse_json_to_solutions
 import plotly.graph_objects as go
 
 
-solutions = parse_json_to_solutions("annotator.json")
+solutions = parse_json_to_solutions("easy.json")
 
 histogram = generate_match_rate_histogram(solutions)
 

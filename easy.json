@@ -1,0 +1,410 @@
+{
+  "dataset": [
+    {
+      "cards": [
+        {
+          "characteristics": [
+            0
+          ],
+          "points": [
+            [
+              1538.0,
+              292.0
+            ],
+            [
+              1793.0,
+              228.0
+            ],
+            [
+              1754.0,
+              49.0
+            ],
+            [
+              1505.0,
+              108.0
+            ]
+          ],
+          "type": 1,
+          "value": 10
+        },
+        {
+          "characteristics": [
+            3
+          ],
+          "points": [
+            [
+              1666.0,
+              406.0
+            ],
+            [
+              1566.0,
+              250.0
+            ],
+            [
+              1795.0,
+              117.0
+            ],
+            [
+              1891.0,
+              277.0
+            ]
+          ],
+          "type": 1,
+          "value": 11
+        },
+        {
+          "characteristics": [
+            0
+          ],
+          "points": [
+            [
+              1309.0,
+              501.0
+            ],
+            [
+              1492.0,
+              532.0
+            ],
+            [
+              1440.0,
+              799.0
+            ],
+            [
+              1256.0,
+              755.0
+            ]
+          ],
+          "type": 0,
+          "value": 11
+        },
+        {
+          "characteristics": [
+            0
+          ],
+          "points": [
+            [
+              1120.0,
+              499.0
+            ],
+            [
+              1304.0,
+              490.0
+            ],
+            [
+              1314.0,
+              755.0
+            ],
+            [
+              1116.0,
+              755.0
+            ]
+          ],
+          "type": 3,
+          "value": 3
+        },
+        {
+          "characteristics": [
+            3
+          ],
+          "points": [
+            [
+              1017.0,
+              768.0
+            ],
+            [
+              936.0,
+              524.0
+            ],
+            [
+              1113.0,
+              444.0
+            ],
+            [
+              1185.0,
+              708.0
+            ]
+          ],
+          "type": 2,
+          "value": 13
+        },
+        {
+          "characteristics": [
+            0
+          ],
+          "points": [
+            [
+              797.0,
+              498.0
+            ],
+            [
+              988.0,
+              504.0
+            ],
+            [
+              984.0,
+              758.0
+            ],
+            [
+              792.0,
+              758.0
+            ]
+          ],
+          "type": 0,
+          "value": 8
+        },
+        {
+          "characteristics": [
+            3
+          ],
+          "points": [
+            [
+              656.0,
+              511.0
+            ],
+            [
+              693.0,
+              776.0
+            ],
+            [
+              899.0,
+              739.0
+            ],
+            [
+              836.0,
+              479.0
+            ]
+          ],
+          "type": 0,
+          "value": 13
+        },
+        {
+          "characteristics": [
+            3
+          ],
+          "points": [
+            [
+              60.0,
+              469.0
+            ],
+            [
+              91.0,
+              625.0
+            ],
+            [
+              348.0,
+              611.0
+            ],
+            [
+              331.0,
+              438.0
+            ]
+          ],
+          "type": 2,
+          "value": 13
+        },
+        {
+          "characteristics": [
+            0
+          ],
+          "points": [
+            [
+              65.0,
+              746.0
+            ],
+            [
+              79.0,
+              563.0
+            ],
+            [
+              342.0,
+              584.0
+            ],
+            [
+              330.0,
+              768.0
+            ]
+          ],
+          "type": 1,
+          "value": 13
+        }
+      ],
+      "imagePath": "./resources/pokerTables/img.png"
+    }
+  ],
+  "solutions": [
+    {
+      "benchmarks": [
+        {
+          "comparison": {
+            "existingCards": [
+              {
+                "matchRate": 0.7100515961647034,
+                "type": 1,
+                "value": 10,
+                "characteristics": [
+                  0
+                ]
+              },
+              {
+                "matchRate": 0.4620745778083801,
+                "type": 1,
+                "value": 11,
+                "characteristics": [
+                  0
+                ]
+              },
+              {
+                "matchRate": 1.0,
+                "type": 0,
+                "value": 11,
+                "characteristics": [
+                  0
+                ]
+              },
+              {
+                "matchRate": 1.0,
+                "type": 3,
+                "value": 3,
+                "characteristics": [
+                  3
+                ]
+              },
+              {
+                "matchRate": 1.0,
+                "type": 2,
+                "value": 13,
+                "characteristics": [
+                  0
+                ]
+              },
+              {
+                "matchRate": 0.7035081386566162,
+                "type": 0,
+                "value": 8,
+                "characteristics": [
+                  0
+                ]
+              },
+              {
+                "matchRate": 1.0,
+                "type": 0,
+                "value": 13,
+                "characteristics": [
+                  3
+                ]
+              },
+              {
+                "matchRate": 0.483378142118454,
+                "type": 2,
+                "value": 13,
+                "characteristics": [
+                  3
+                ]
+              },
+              {
+                "matchRate": 1.0,
+                "type": 1,
+                "value": 13,
+                "characteristics": [
+                  3
+                ]
+              }
+            ],
+            "falsePositiveCards": []
+          },
+          "performance": {
+            "executionTime": 16460.0
+          }
+        }
+      ],
+      "name": "Base Lior Solution Strategy"
+    },
+    {
+      "benchmarks": [
+        {
+          "comparison": {
+            "existingCards": [
+              {
+                "matchRate": 0.0,
+                "type": 1,
+                "value": 10,
+                "characteristics": [
+                  0
+                ]
+              },
+              {
+                "matchRate": 0.0,
+                "type": 1,
+                "value": 11,
+                "characteristics": [
+                  0
+                ]
+              },
+              {
+                "matchRate": 0.0,
+                "type": 0,
+                "value": 11,
+                "characteristics": [
+                  0
+                ]
+              },
+              {
+                "matchRate": 0.0,
+                "type": 3,
+                "value": 3,
+                "characteristics": [
+                  0
+                ]
+              },
+              {
+                "matchRate": 0.0,
+                "type": 2,
+                "value": 13,
+                "characteristics": [
+                  0
+                ]
+              },
+              {
+                "matchRate": 0.0,
+                "type": 0,
+                "value": 8,
+                "characteristics": [
+                  0
+                ]
+              },
+              {
+                "matchRate": 0.0,
+                "type": 0,
+                "value": 13,
+                "characteristics": [
+                  3
+                ]
+              },
+              {
+                "matchRate": 0.0,
+                "type": 2,
+                "value": 13,
+                "characteristics": [
+                  3
+                ]
+              },
+              {
+                "matchRate": 0.0,
+                "type": 1,
+                "value": 13,
+                "characteristics": [
+                  3
+                ]
+              }
+            ],
+            "falsePositiveCards": []
+          },
+          "performance": {
+            "executionTime": 24351.0
+          }
+        }
+      ],
+      "name": "Base Quentin Solution Strategy"
+    }
+  ]
+}

@@ -40,7 +40,7 @@ class Solution:
 			characteristic_names.append(cardCharacteristics.get(key))
 
 		histogram = go.Figure(
-			data=[go.Bar(x=characteristic_names, y=array_rates)],
+			data=[go.Bar(x=characteristic_names, y=array_rates)], layout_yaxis_range=[0, 1],
 			layout_title_text="Average matchRate per characteristics"
 		)
 		histogram.update_layout(

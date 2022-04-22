@@ -22,7 +22,7 @@ def generate_match_rate_histogram(solutions):
 	for index in range(len(solutions)):
 		listofBars.append(go.Bar(name=solution_names[index], x=card_names, y=solution_values[index]))
 
-	histogram = go.Figure(data=listofBars)
+	histogram = go.Figure(data=listofBars, layout_yaxis_range=[0, 1])
 
 	histogram.update_layout(
 		title="Score matches",
