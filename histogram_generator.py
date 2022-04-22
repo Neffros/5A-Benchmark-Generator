@@ -11,14 +11,13 @@ def generate_match_rate_histogram(solutions):
 	for card in solutions[0].cards:
 		card_names.append(card.value + " of " + card.card_type)
 
-	for index in range(len(card_names)):
+	for solution in solutions:
 		values_of_card = []
-		for solution in solutions:
+		for index in range(len(card_names)):
 			values_of_card.append(solution.cards[index].match_rate)
 		solution_values.append(values_of_card)
 
 	listofBars = []
-
 	for index in range(len(solutions)):
 		listofBars.append(go.Bar(name=solution_names[index], x=card_names, y=solution_values[index]))
 

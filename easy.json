@@ -8,23 +8,23 @@
           ],
           "points": [
             [
-              1538.0,
-              292.0
+              1539.0,
+              297.0
             ],
             [
-              1793.0,
-              228.0
+              1496.0,
+              117.0
             ],
             [
-              1754.0,
-              49.0
+              1756.0,
+              48.0
             ],
             [
-              1505.0,
-              108.0
+              1794.0,
+              231.0
             ]
           ],
-          "type": 1,
+          "type": 2,
           "value": 10
         },
         {
@@ -33,23 +33,23 @@
           ],
           "points": [
             [
-              1666.0,
-              406.0
+              1660.0,
+              412.0
             ],
             [
-              1566.0,
-              250.0
+              1571.0,
+              254.0
             ],
             [
-              1795.0,
-              117.0
+              1799.0,
+              120.0
             ],
             [
-              1891.0,
-              277.0
+              1887.0,
+              278.0
             ]
           ],
-          "type": 1,
+          "type": 2,
           "value": 11
         },
         {
@@ -58,20 +58,20 @@
           ],
           "points": [
             [
-              1309.0,
-              501.0
+              1253.0,
+              756.0
             ],
             [
-              1492.0,
+              1312.0,
+              494.0
+            ],
+            [
+              1489.0,
               532.0
             ],
             [
-              1440.0,
-              799.0
-            ],
-            [
-              1256.0,
-              755.0
+              1438.0,
+              794.0
             ]
           ],
           "type": 0,
@@ -84,19 +84,19 @@
           "points": [
             [
               1120.0,
-              499.0
-            ],
-            [
-              1304.0,
-              490.0
-            ],
-            [
-              1314.0,
               755.0
             ],
             [
-              1116.0,
-              755.0
+              1120.0,
+              488.0
+            ],
+            [
+              1302.0,
+              489.0
+            ],
+            [
+              1296.0,
+              749.0
             ]
           ],
           "type": 3,
@@ -108,20 +108,20 @@
           ],
           "points": [
             [
-              1017.0,
-              768.0
+              1018.0,
+              774.0
             ],
             [
-              936.0,
-              524.0
+              938.0,
+              519.0
             ],
             [
-              1113.0,
-              444.0
+              1116.0,
+              453.0
             ],
             [
-              1185.0,
-              708.0
+              1198.0,
+              702.0
             ]
           ],
           "type": 2,
@@ -133,20 +133,20 @@
           ],
           "points": [
             [
-              797.0,
+              795.0,
+              764.0
+            ],
+            [
+              794.0,
               498.0
             ],
             [
-              988.0,
-              504.0
+              989.0,
+              490.0
             ],
             [
-              984.0,
-              758.0
-            ],
-            [
-              792.0,
-              758.0
+              980.0,
+              753.0
             ]
           ],
           "type": 0,
@@ -158,20 +158,20 @@
           ],
           "points": [
             [
-              656.0,
-              511.0
+              705.0,
+              782.0
             ],
             [
-              693.0,
-              776.0
+              652.0,
+              518.0
             ],
             [
-              899.0,
-              739.0
+              825.0,
+              480.0
             ],
             [
-              836.0,
-              479.0
+              875.0,
+              740.0
             ]
           ],
           "type": 0,
@@ -184,22 +184,22 @@
           "points": [
             [
               60.0,
-              469.0
+              464.0
             ],
             [
-              91.0,
-              625.0
+              326.0,
+              435.0
             ],
             [
-              348.0,
-              611.0
+              350.0,
+              612.0
             ],
             [
-              331.0,
-              438.0
+              95.0,
+              649.0
             ]
           ],
-          "type": 2,
+          "type": 3,
           "value": 13
         },
         {
@@ -208,20 +208,20 @@
           ],
           "points": [
             [
-              65.0,
-              746.0
+              75.0,
+              561.0
             ],
             [
-              79.0,
-              563.0
+              339.0,
+              588.0
             ],
             [
-              342.0,
-              584.0
+              329.0,
+              766.0
             ],
             [
-              330.0,
-              768.0
+              62.0,
+              750.0
             ]
           ],
           "type": 1,
@@ -238,82 +238,82 @@
           "comparison": {
             "existingCards": [
               {
-                "matchRate": 0.7100515961647034,
-                "type": 1,
-                "value": 10,
                 "characteristics": [
                   0
-                ]
+                ],
+                "matchRate": 1.0,
+                "type": 2,
+                "value": 10
               },
               {
-                "matchRate": 0.4620745778083801,
-                "type": 1,
-                "value": 11,
+                "characteristics": [
+                  3
+                ],
+                "matchRate": 1.0,
+                "type": 2,
+                "value": 11
+              },
+              {
                 "characteristics": [
                   0
-                ]
-              },
-              {
+                ],
                 "matchRate": 1.0,
                 "type": 0,
-                "value": 11,
-                "characteristics": [
-                  0
-                ]
+                "value": 11
               },
               {
+                "characteristics": [
+                  0
+                ],
                 "matchRate": 1.0,
                 "type": 3,
-                "value": 3,
+                "value": 3
+              },
+              {
                 "characteristics": [
                   3
-                ]
-              },
-              {
+                ],
                 "matchRate": 1.0,
                 "type": 2,
-                "value": 13,
-                "characteristics": [
-                  0
-                ]
+                "value": 13
               },
               {
+                "characteristics": [
+                  0
+                ],
                 "matchRate": 0.7035081386566162,
                 "type": 0,
-                "value": 8,
-                "characteristics": [
-                  0
-                ]
+                "value": 8
               },
               {
+                "characteristics": [
+                  3
+                ],
                 "matchRate": 1.0,
                 "type": 0,
-                "value": 13,
-                "characteristics": [
-                  3
-                ]
+                "value": 13
               },
               {
-                "matchRate": 0.483378142118454,
-                "type": 2,
-                "value": 13,
                 "characteristics": [
                   3
-                ]
+                ],
+                "matchRate": 1.0,
+                "type": 3,
+                "value": 13
               },
               {
+                "characteristics": [
+                  0
+                ],
                 "matchRate": 1.0,
                 "type": 1,
-                "value": 13,
-                "characteristics": [
-                  3
-                ]
+                "value": 13
               }
             ],
             "falsePositiveCards": []
           },
           "performance": {
-            "executionTime": 16460.0
+            "executionTime": 17.358999252319336
           }
         }
       ],
@@ -325,93 +325,82 @@
           "comparison": {
             "existingCards": [
               {
-                "matchRate": 0.0,
-                "type": 1,
-                "value": 10,
                 "characteristics": [
                   0
-                ]
+                ],
+                "matchRate": 0.0,
+                "type": 2,
+                "value": 10
               },
               {
+                "characteristics": [
+                  3
+                ],
                 "matchRate": 0.0,
-                "type": 1,
-                "value": 11,
+                "type": 2,
+                "value": 11
+              },
+              {
                 "characteristics": [
                   0
-                ]
-              },
-              {
+                ],
                 "matchRate": 0.0,
                 "type": 0,
-                "value": 11,
-                "characteristics": [
-                  0
-                ]
+                "value": 11
               },
               {
+                "characteristics": [
+                  0
+                ],
                 "matchRate": 0.0,
                 "type": 3,
-                "value": 3,
-                "characteristics": [
-                  0
-                ]
+                "value": 3
               },
               {
-                "matchRate": 0.0,
-                "type": 2,
-                "value": 13,
-                "characteristics": [
-                  0
-                ]
-              },
-              {
-                "matchRate": 0.0,
-                "type": 0,
-                "value": 8,
-                "characteristics": [
-                  0
-                ]
-              },
-              {
-                "matchRate": 0.0,
-                "type": 0,
-                "value": 13,
                 "characteristics": [
                   3
-                ]
-              },
-              {
+                ],
                 "matchRate": 0.0,
                 "type": 2,
-                "value": 13,
-                "characteristics": [
-                  3
-                ]
+                "value": 13
               },
               {
+                "characteristics": [
+                  0
+                ],
                 "matchRate": 0.0,
+                "type": 0,
+                "value": 8
+              },
+              {
+                "characteristics": [
+                  3
+                ],
+                "matchRate": 0.8,
+                "type": 0,
+                "value": 13
+              },
+              {
+                "characteristics": [
+                  3
+                ],
+                "matchRate": 0.0,
+                "type": 3,
+                "value": 13
+              },
+              {
+                "characteristics": [
+                  0
+                ],
+                "matchRate": 0.5,
                 "type": 1,
-                "value": 13,
-                "characteristics": [
-                  3
-                ]
+                "value": 13
               }
             ],
-            "falsePositiveCards": [
-              {
-                "type": 1,
-                "value": 12,
-                "imagePath": "E:/dev/5A-OpenCV-Benchmarks/Annotator/resources/pokerTables/IMG_20211217_110650.jpg"
-              },
-              {
-                "type": 3,
-                "value": 7,
-                "imagePath": "E:/dev/5A-OpenCV-Benchmarks/Annotator/resources/pokerTables/IMG_20211217_110650.jpg"
-              }
-            ]
+            "falsePositiveCards": []
           },
           "performance": {
-            "executionTime": 24351.0
+            "executionTime": 25.976999282836914
           }
         }
       ],
